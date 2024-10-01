@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Sociais e Econômicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MeuSite</div>
+            <ul class="nav-links">
+                <li><button class="info-btn" data-info="poverty-info">Pobreza</button></li>
+                <li><button class="info-btn" data-info="population-info">População</button></li>
+                <li><button class="info-btn" data-info="mortality-info">Mortalidade</button></li>
+                <li><button class="info-btn" data-info="birthrate-info">Natalidade</button></li>
+            </ul>
+            <input type="text" id="search" placeholder="Pesquisar país...">
+        </nav>
+        <div class="tooltip" id="tooltip"></div>
+    </header>
+
+    <main>
+        <section id="poverty">
+            <h2>Pobreza</h2>
+            <canvas id="povertyChart"></canvas>
+        </section>
+
+        <section id="population">
+            <h2>População</h2>
+            <canvas id="populationChart"></canvas>
+        </section>
+
+        <section id="mortality">
+            <h2>Mortalidade</h2>
+            <canvas id="mortalityChart"></canvas>
+        </section>
+
+        <section id="birthrate">
+            <h2>Natalidade</h2>
+            <canvas id="birthrateChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dados fictícios fornecidos para exemplo.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+ 
